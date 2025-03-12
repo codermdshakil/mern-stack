@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MSF Dashboard</title>
+    <!-- css file linked here -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="box">
+          <div class="box-container">
+            <img
+              class="status_bar"
+              src="./images/Status Bar Black.png"
+              alt="" />
+          </div>
+          <div class="main_balance_section">
+            <div class="balance_container">
+              <div class="balance-box">
+                <div>
+                  <img src="./images/Group.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="balance_title">$<span id="main-balance">4500</span></h3>
+                  <p class="available_text">Available Balance</p>
+                </div>
+              </div>
+              <div class="login_status">
+                <button class="login_st_btn">
+                  <img
+                    style="margin-right: 8px"
+                    src="./images/Frame.png"
+                    alt="" />
+                  Log Out
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="welcome_info">
+            <h3>🔥Welcome to Payooo!</h3>
+            <p>
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </div>
+          <div class="methods-container">
+            <div class="container">
+              <div class="method-box">
+                <div>
+                  <button id="add-money-button" class="method-btn">
+                    <img src="./images/wallet 1.png" alt="" /> <br />
+                    Add Money
+                  </button>
+                </div>
+                <div>
+                  <button id="cashout-button" class="method-btn"> 
+                    <img src="./images/send 1.png" alt="" /> <br />
+                    Cash Out
+                  </button>
+                </div>
+                <div>
+                  <button id="transfar-button" class="method-btn">
+                    <img src="./images/money 1.png" alt="" /> <br />
+                    Transfar Money
+                  </button>
+                </div>
+                <div>
+                  <button id="getBonus-button" class="method-btn">
+                    <img src="./images/financial 1.png" alt="" /> <br />
+                    Get Bonus
+                  </button>
+                </div>
+                <div>
+                  <button id="paybill-button" class="method-btn">
+                    <img src="./images/wallet 1.png" alt="" /> <br />
+                    Pay Bill
+                  </button>
+                </div>
+                <div>
+                  <button id="transaction-button" class="method-btn">
+                    <img src="./images/transaction 1.png" alt="" /> <br />
+                    Transaction
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="content-show-section">
+            <div id="money-section" class="hidden add-money-section">
+              <div class="container">
+                <h2 class="add-money-title">Add Money</h2>
+                <div class="input_container">
+                  <div>
+                    <h3 class="input_label">Bank Account Number</h3>
+                    <input id="input-account-number" class="input-field" placeholder="Enter your number" type="number" required/>
+                  </div>
+                  <div>
+                    <h3 class="input_label">Amount to Add</h3>
+                    <input id="amount-number" class="input-field" placeholder="Enter your number" type="number" required/>
+                  </div>
+                  <div>
+                    <h3 class="input_label">4 Digit Pin</h3>
+                    <input id="input-pin1" class="input-field input_second" type="password" placeholder="Enter your pin" required/>
+                  </div>
+                  <button id="add-money-btn" id="login_action_btn" class="login_btn">Add Money</button>
+                </div>
+              </div>
+            </div>
+            <div id="cashout-out-section" class="hidden cashout-section">
+              <div class="container">
+                <h2 class="add-money-title">Cash Out</h2>
+                <div class="input_container">
+                  <div>
+                    <h3 class="input_label">Amount to Cashout</h3>
+                    <input id="cashOut-amount" id="input-number" class="input-field" placeholder="Enter your number" type="number" required/>
+                  </div>
+                  <div>
+                    <h3 class="input_label">4 Digit Pin</h3>
+                    <input id="pin-number" class="input-field input_second" type="password" placeholder="Enter your pin" required/>
+                  </div>
+                  <button id="cashOut-btn" class="login_btn">Cash Out</button>
+                </div>
+              </div>
+            </div>
+            <div id="transfar-money-section" class="hidden transfarMoney-section">
+              <div class="container">
+                <h2 class="add-money-title">Transfar Money</h2>
+                <div class="input_container">
+                  <div>
+                    <h3 class="input_label">User account number</h3>
+                    <input id="input-number" class="input-field" placeholder="Enter user account number" type="number" required/>
+                  </div>
+                  <div>
+                    <h3 class="input_label">Amount</h3>
+                    <input id="input-number" class="input-field" placeholder="Enter amount" type="number" required/>
+                  </div>
+                  <div>
+                    <h3 class="input_label">4 Digit Pin</h3>
+                    <input id="input-pin" class="input-field input_second" type="password" placeholder="Enter your pin" required/>
+                  </div>
+                  <button id="login_action_btn" class="login_btn">Transfar Money</button>
+                </div>
+              </div>
+            </div>
+            <div id="getBonus-section" class="hidden getBonus-section">
+              <div class="container">
+                <h2 class="add-money-title">Get Bonus</h2>
+                <div class="input_container">
+                  <div>
+                    <h3 class="input_label">Enter bonus Coupon</h3>
+                    <input id="input-number" class="input-field coupon-btn" placeholder="Enter bonus coupon" type="number" required/>
+                  </div>
+                  <button id="login_action_btn" class="login_btn">Get Bonus</button>
+                </div>
+              </div>
+            </div>
+            <div id="paybill-section" class="hidden paybill-sections">
+              <div class="container">
+                <h2 class="add-money-title">Pay Bill </h2>
+                <p>Pay bill section is here</p>
+              </div>
+            </div>
+            <div id="transaction-section" class="transaction-sections">
+              <div class="container">
+                <h2 class="add-money-title">Transactions History</h2>
+                <p>All Transtraction is here</p>
+                <!-- <div class="input_container">
+                  <div>
+                    <h3 class="input_label">Enter bonus Coupon</h3>
+                    <input id="input-number" class="input-field coupon-btn" placeholder="Enter bonus coupon" type="number" required/>
+                  </div>
+                  <button id="login_action_btn" class="login_btn">Get Bonus</button>
+                </div> -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/payoo_index.js"></script>
+    <script src="./js/payoo_deshboard_mfs.js"></script>
+  </body>
+</html>

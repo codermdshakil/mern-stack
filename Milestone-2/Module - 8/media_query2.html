@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+    <style>
+        body{
+            max-width: 1140px;
+            margin: 0 auto;
+            border: 1px solid crimson;
+        }
+
+        .image-container{
+            display: flex;
+        }
+
+        .image-container div{
+            width: 50%;
+        }
+
+        .image-container img{
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Responsive website</h3>
+    <ol>
+        <li>Viewport meta tag</li>
+        <li>CSS relative units</li>
+        <li>Body max width and center align (1140px)</li>
+        <li>Image Fluid</li>
+        <li>Two Column flex and use media quries with flex direction column</li>
+        <li>Multi Column: Grid Layout</li>
+        <li>Menu Responsive : We will learn after JS</li>
+    </ol>
+
+    <div class="image-container">
+        <div>
+            <img src="./images/healthy_food1.jpg" alt="">
+        </div>
+        <div>
+            <img src="./images/tiger.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

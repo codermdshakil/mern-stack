@@ -1,0 +1,22 @@
+
+
+.title{
+    color: blueviolet;
+}
+
+#fruits-title{
+    color:darkmagenta;
+}
+
+.linked_places{
+    color: rgb(20, 73, 220);
+}
+
+.fruits-container li{
+    color: cadetblue;
+}
+
+.text-center{
+    text-align: center;
+    /* background-color: yellow !important; */
+}

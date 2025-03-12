@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - 4</title>
+    <style>
+      body {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+      .first-container {
+        width: 100%;
+        display: flex;
+      }
+      .first {
+        width: 50%;
+      }
+      .first img {
+        width: 100%;
+      }
+
+      .second {
+        padding: 20px;
+        width: 50%;
+      }
+
+      .second-container {
+       display: flex;
+      }
+
+      @media screen and (max-width: 576px) {
+        .first-container {
+          flex-direction: column;
+        }
+        .first {
+          width: 100%;
+        }
+        .first img {
+          width: 100%;
+        }
+
+        .second {
+          padding: 20px;
+          width: 100%;
+        }
+        .second-container {
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="first">
+        <img src="./images/tiger.png" alt="" />
+      </div>
+      <div class="second">
+        <h2>What you learn today!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          repellat officia ex at numquam, expedita adipisci assumenda est amet
+          soluta delectus, ipsum nesciunt similique quos sunt modi repudiandae,
+          nam veritatis. Non quasi, a voluptates corporis neque nostrum
+          perferendis iste asperiores possimus cumque velit, eius necessitatibus
+          illum, doloremque consectetur. Amet, perferendis.
+        </p>
+      </div>
+    </div>
+    <div class="second-container">
+      <div class="second">
+        <h2>What you learn today!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          repellat officia ex at numquam, expedita adipisci assumenda est amet
+          soluta delectus, ipsum nesciunt similique quos sunt modi repudiandae,
+          nam veritatis. Non quasi, a voluptates corporis neque nostrum
+          perferendis iste asperiores possimus cumque velit, eius necessitatibus
+          illum, doloremque consectetur. Amet, perferendis.
+        </p>
+      </div>
+      <div class="first">
+        <img src="./images/tiger.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

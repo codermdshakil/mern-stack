@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Example</title>
+
+    <style>
+      .navber {
+        display: block;
+        width: 90%;
+        margin: auto;
+        border-bottom: 2px solid gray;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      nav a {
+        font-size: 30px;
+        text-decoration: none;
+        margin-left: 10px;
+        color: black;
+      }
+
+      .login-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      .login-box {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        border: 1px solid rebeccapurple;
+      }
+
+      .login-box input {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navber">
+      <nav>
+        <div>
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Profile</a>
+        </div>
+        <a href="">Login</a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="login-form-container">
+        <form class="login-box">
+          <h2>Please Login</h2>
+          <input type="email" name="" placeholder="Your email" required />
+          <input type="password" name="" placeholder="Your password" required />
+          <input type="button" value="Login" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css filed linked here -->
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone border-primary bg-gray-100">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display">
+          <!-- Account balance  -->
+          <div
+            class="stats shadow bg-white flex text-center mt-16 justify-center">
+            <div class="stat">
+              <div class="stat-title font-bold">Account Balance</div>
+              <div class="stat-value" id="main-balance">9400</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <!-- Features start -->
+          <div class="flex justify-evenly">
+            <button id="add-money-large-btn" class="btn btn-lg">Add Money</button>
+            <button id="cash-out-large-btn" class="btn btn-lg">Cash Out</button>
+            <button id="transaction-large-btn"  class="btn btn-lg">Transactions</button>
+          </div>
+          <div class="divider"></div>
+          <!-- Features end -->
+
+          <!-- add money method start  -->
+          <div id="add-money-section" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="text-lg font-bold fieldset-label">Amount </label>
+                <input
+                  id="input-add-money"
+                  type="number"
+                  class="input"
+                  autocomplete="off"
+                  placeholder="Enter Amount" />
+                <label class="text-lg font-bold fieldset-label">Pin Number</label
+                >
+                <input
+                  id="input-pin-number"
+                  type="password"
+                  autocomplete="off"
+                  class="input"
+                  placeholder="Enter pin number" />
+                <button id="btn-add-money" class="btn btn-neutral mt-4">
+                  Add Money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- add money method end -->
+
+          <!-- cash out method start -->
+          <div id="cash-out-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="text-lg font-bold fieldset-label">Amount of Cash Out</label>
+                <input
+                  id="input-cashout-amount"
+                  type="number"
+                  class="input"
+                  autocomplete="off"
+                  placeholder="Enter Amount" />
+                <label class="text-lg font-bold fieldset-label">Pin Number</label
+                >
+                <input
+                  id="input-pin-number-cashout"
+                  type="password"
+                  autocomplete="off"
+                  class="input"
+                  placeholder="Enter pin number" />
+                <button id="btn-cashout-money" class="btn btn-neutral mt-4">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- cash out method end -->
+
+          <!-- transaction method start -->
+
+          <div id="transaction-section" class="hidden">
+            <h3 class="text-2xl text-center font-bold mb-3">Transactions History</h3>
+            <section id="transaction-container" class="space-y-4">
+              
+            </section>
+          </div>
+          <!-- transaction method end -->
+
+        </div>
+      </div>
+    </main>
+
+    <!-- js files added -->
+     <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
+    <script src="./js/features.js"></script>
+  </body>
+</html>

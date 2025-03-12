@@ -1,0 +1,193 @@
+
+/* Outfir font linked here */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #1E1E1E;
+}
+.box{
+    width: 600px;
+    height: 70rem;
+    margin: auto;
+    display: block;
+    background-color: #F4F5F7;
+    border: 1px solid black;
+}
+
+
+.logo_img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    padding-top: 120px;
+    margin-bottom: 100px;
+
+}
+
+.input_container{
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    /* margin-bottom: 100px; */
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.input_label{
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input-field{
+    width: 95%;
+    padding: 15px 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 20px;
+    background-color: #F4F5F7;
+}
+
+.input_second{
+    margin-bottom: 20px;
+}
+
+.login_btn{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid white;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: #0874F2;
+    cursor: pointer;
+}
+
+.login_btn:hover{
+    color: #0874F2;
+    background-color: #fff;
+    border: 1px solid #0874F2;
+}
+
+/* Dashboard */
+.status_bar{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+.main_balance_section{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e2e4ea;
+}
+.balance_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.balance-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.balance_title{
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+}
+
+.available_text{
+    font-family: "Outfit", sans-serif;
+    color: #898787;
+}
+
+
+.login_st_btn{
+    display: flex;
+    cursor: pointer;
+    color: #abacae;
+    padding: 8px 10px;
+    border-radius: 10px;
+    align-items: center;
+    border: 0.5px solid #e2e4ea;
+    justify-content: space-between;
+}
+
+
+.welcome_info, .container{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.welcome_info h3{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+}
+
+.welcome_info p{
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+.methods-container{
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.blocked{
+    display: block;
+}
+
+.add-money-section{
+    margin: 30px 0px;
+}
+.add-money-title{
+    color: #080808;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+.method-box{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.method-btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    border: 0.5px solid #e2e4ea;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.method-btn:focus{
+    color: #0874F2;
+    border: 1px solid #0874F2;
+}
+
+
+.coupon-btn{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dom Events</title>
+    <!-- css file linked here -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- option : 1 -->
+    <h2 onclick="console.log('I am JS')">Hello JS</h2>
+    <button onclick="console.log(10)">Click Me</button>
+    <button onclick="console.log(335)" >Another Click me</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor= 'yellow'" >Make Yellow</button>
+    <!-- option: 2 -->
+    <button onclick="makeRed()" >Make Red</button>
+    
+    <!-- option : 3 -->
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Purple</button>
+
+    <!-- option : 4-->
+    <button id="make-pink">Make Pink</button>
+    <button id="make-green" >Make Green</button>
+
+    <!-- js file linked here -->
+    <script src="./js/events.js"></script>
+</body>
+</html>

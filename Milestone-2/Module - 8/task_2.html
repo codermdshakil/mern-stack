@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 2</title>
+    <style>
+
+        .boxs-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .item-1{
+            grid-row: 1 / 2 span;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: crimson;
+        }
+        .item-2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: goldenrod;
+        }
+
+        .second-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .item-3{
+            grid-row: 1 / 2 span;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: blueviolet;
+        }
+        .item-4{
+            grid-row: 1 / 2 span;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: darkcyan;
+        }
+
+        @media screen and (max-width:576px) {
+            .boxs-container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .second-container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .item-3{
+                grid-row:auto;
+            }
+            .item-4{
+                grid-row:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="boxs-container">
+        <div class="item-1">1</div>
+        <div class="item-2">2</div>
+        <div class="second-container">
+            <div class="item-3">3</div>
+        <div class="item-4">4</div>
+        </div>
+    </div>
+    
+</body>
+</html>
