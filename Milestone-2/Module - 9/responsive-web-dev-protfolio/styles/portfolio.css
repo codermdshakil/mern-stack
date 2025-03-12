@@ -184,6 +184,7 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     display: none;
 }
 
+/* small device */
 @media screen and (max-width:576px) {
 
     .header{
@@ -204,15 +205,23 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
         flex-direction: column-reverse;
         margin: 0px;
     }
+    .banner-content{
+        width: 100%;
+    }
 
     .banner-profile-pic {
         width: 100%;
     }
 
+    .banner-profile-pic img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
     .btn-primary{
         margin-bottom: 20px;
     }
-
 
     .resume-column, .about{
         padding: 15px;
@@ -233,15 +242,38 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
 /* Medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
 
-     
+    nav{
+        flex-direction: column;
+    }
     .skills-container,
     .resume-container
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-content{
+        padding-bottom: 30px;
+    }
+    .banner-profile-pic {
+        width: 100%;
+    }
+
+    .banner-profile-pic img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
     .resume-column{
         padding: 15px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
 
     footer {
