@@ -1,4 +1,8 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 /* Connect with work sans font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -7,4 +11,48 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* gray 02 */
+.text-gray{
+    color: #424242;
+}
+
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1)
+}
+
+/* header styles */
+.navber{
+    justify-content: space-between ;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.nav-item{
+    list-style: none;
+}
+.nav-item a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navber, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.brand{
+    font-size: 25px;
+    font-weight:bold;
 }
