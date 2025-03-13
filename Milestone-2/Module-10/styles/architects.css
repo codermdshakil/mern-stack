@@ -1,58 +1,123 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 /* Connect with work sans font */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 .work-sans-font {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-
 /* shared styles */
-.display-flex{
-    display: flex;
+.display-flex {
+  display: flex;
 }
 
 /* gray 02 */
-.text-gray{
-    color: #424242;
+.text-gray {
+  color: #424242;
 }
 
-.text-light-gray{
-    color: #727272;
+.text-light-gray {
+  color: #727272;
 }
-.bg-light{
-    background-color: rgba(255, 144, 14, 0.1)
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
 }
 
 /* header styles */
-.navber{
-    justify-content: space-between ;
-    align-items: center;
-    padding: 30px 0px;
+.navber {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
 }
 
-.nav-item{
-    list-style: none;
+.nav-item {
+  list-style: none;
 }
 .nav-item a {
-    font-size: 16px;
-    text-decoration: none;
-    margin-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-.navber, .banner{
-    max-width: 1440px;
-    margin: 0 auto;
+.navber,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
+/* Banner style start here */
 
 .brand{
-    font-size: 25px;
-    font-weight:bold;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.banner-info {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner-title {
+  color: #131313;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.banner-description {
+  font-size: 1rem;
+  color: #727272;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  color: white;
+  font-size: 1rem;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #ff900e;
+  border: 1px solid #ff900e;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: #ff900e;
+  background-color: white;
+  border: 1px solid #ff900e;
+}
+
+.banner img{
+    width: 100%;
+}
+/* Banner style end here */
+
+@media screen and (max-width: 576px) {
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .banner-info{
+    width: 90%;
+  }
+  .banner-title{
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .btn-primary {
+    color: white;
+    font-size: 0.8rem;
+    padding: 12px 15px;
+  }
+
+
 }
