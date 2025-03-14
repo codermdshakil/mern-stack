@@ -30,6 +30,9 @@
 }
 
 /* header styles */
+header{
+  padding-bottom: 30px;
+}
 .navber {
   justify-content: space-between;
   align-items: center;
@@ -53,7 +56,7 @@
 
 /* Banner style start here */
 
-.brand{
+.brand {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -95,8 +98,8 @@
   border: 1px solid #ff900e;
 }
 
-.banner img{
-    width: 100%;
+.banner img {
+  width: 100%;
 }
 /* Banner style end here */
 
@@ -106,18 +109,16 @@
     font-weight: bold;
   }
 
-  .banner-info{
+  .banner-info {
     width: 90%;
   }
-  .banner-title{
-    font-size: 2rem;
-    line-height: 2.2rem;
+  .banner-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .btn-primary {
     color: white;
-    font-size: 0.8rem;
-    padding: 12px 15px;
+    font-size: 0.6rem;
+    padding: 8px 10px;
   }
-
-
 }
