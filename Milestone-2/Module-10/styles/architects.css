@@ -149,7 +149,36 @@ header {
   margin-left: 50px;
 }
 
+.title-sidebar{
+  background-color: #ff900e;
+  color: #ff900e;
+  width: 5px;
+  height: 20px;
+}
 /* Feature section end here */
+
+
+.features-content-member{
+  display: flex;
+
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+}
+.features,
+.team-member{
+  width: 50%;
+}
+ 
+
+.feature-box{
+  border: 1px solid gray;
+}
+.team-member img{
+  width: 100%;
+}
 
 @media screen and (max-width: 576px) {
   .brand {
