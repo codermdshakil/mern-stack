@@ -307,9 +307,10 @@ header {
   background-color: #FFF4E7;
 }
 
+/* Small device */
 @media screen and (max-width: 576px) {
   .brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 
