@@ -290,7 +290,22 @@ header {
   margin: 0 auto;
   filter: grayscale(100%);
 }
+.copyright{
+  text-decoration: none;
+  font-weight: bold;
+  color: #424242;
+}
 
+.footer-section{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  color: #727272;
+  margin-bottom: 50px;  
+  text-align: center;
+  padding: 20px;
+  background-color: #FFF4E7;
+}
 
 @media screen and (max-width: 576px) {
   .brand {
@@ -372,6 +387,9 @@ header {
   .sponshors-container{
     grid-template-columns: repeat(1, 1fr);
   }
+  .footer-section{
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -417,6 +435,10 @@ header {
   
   .sponshors-container{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-section{
+    width: 80%;
   }
 
 }
