@@ -136,6 +136,10 @@ header {
 }
 */
 
+.feature-titles{
+  display: flex;
+}
+
 .feature-title {
   color: black;
   font-size: 2.5rem;
@@ -149,36 +153,24 @@ header {
   margin-left: 50px;
 }
 
-.title-sidebar{
-  background-color: #ff900e;
-  color: #ff900e;
-  width: 5px;
-  height: 20px;
+#title_leftBar {
+  border-left: 5px solid #ff900e;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  padding-left: 1.3rem;
+  margin-bottom: 30px;
 }
+.features-section{
+  margin-bottom: 50px;
+}
+
 /* Feature section end here */
 
 
-.features-content-member{
-  display: flex;
 
-}
 
-.features{
-  display: flex;
-  flex-direction: column;
-}
-.features,
-.team-member{
-  width: 50%;
-}
- 
-
-.feature-box{
-  border: 1px solid gray;
-}
-.team-member img{
-  width: 100%;
-}
 
 @media screen and (max-width: 576px) {
   .brand {
