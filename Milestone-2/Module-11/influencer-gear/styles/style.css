@@ -9,11 +9,75 @@
     --secondary-color:#E02C6D;
     --body-color:#AAAAAA;
     --light-color:#787885;
-    --primary-font: font-family: "Poppins", sans-serif;
-    --secondary-font: font-family: "Inter", sans-serif;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Inter", sans-serif;
 }
 
 
+/* Shared Style */
+.container{
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* Header styled start here */
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    list-style: none;
+}
+.nav-items li a{
+    text-decoration: none;
+}
+
+.nav-item{
+    margin-left: 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+/* Header styled end here */
+
+
+
+/* small device  */
+
+@media screen and (max-width:576px) {
+    .header-container{
+        flex-direction: column;
+    }
+}
+
+
+/* medium device  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header-container{
+        flex-direction: column;
+    }
+}
 
 
 
