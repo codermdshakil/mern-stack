@@ -71,6 +71,10 @@
 
 /* Header styled end here */
 
+.hidden{
+    display: none;
+}
+
 
 /* Banner styles start here */
 .banner-container{
@@ -112,6 +116,7 @@
     width: 60%;
     background-image: url("../images/Group33091.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center center;
     margin-bottom: 1.2rem;
 }
@@ -119,7 +124,6 @@
     display: block;
     margin: 0 auto;   
 }
- 
 /* Banner styles end here */
 
 .banner-container{
