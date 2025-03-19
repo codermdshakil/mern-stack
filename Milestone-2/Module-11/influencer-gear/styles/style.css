@@ -227,6 +227,9 @@
         padding: 1rem;
         margin-bottom: 2rem;
     }
+    .banner-img img{
+        width: 95%;
+    }
     .banner-info{
         width: calc(100% - 2rem);
         text-align: center;
