@@ -5,6 +5,10 @@
 
 /* Shared colors */
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --primary-color:#3A3A3A;
     --secondary-color:#E02C6D;
@@ -25,15 +29,20 @@
 
 
 
-
-
-
 /* Header styled start here */
 
+ 
+#header-section{
+    position: sticky;
+    top: 0px;
+    background-color: #f1f1f1cb;
+}
 .header-container{
     display: flex;
     align-items: center;
+ 
     justify-content: space-between;
+    padding: 1.5rem;
 }
 
 .brand-logo{
@@ -95,6 +104,7 @@
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
+
 .banner-img{
     width: 60%;
 }
@@ -104,6 +114,10 @@
 }
 /* Banner styles end here */
 
+.banner-container{
+    margin: 120px 0px;
+}
+
 
 
 /* small device  */
@@ -111,6 +125,16 @@
 @media screen and (max-width:576px) {
     .header-container{
         flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-info{
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -120,6 +144,8 @@
     .header-container{
         flex-direction: column;
     }
+
+
 }
 
 
