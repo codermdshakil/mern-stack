@@ -256,6 +256,53 @@
 }
 
 
+/* Footer section start here */
+.footer-sectoin{
+    padding: 3rem 0px;
+    background-color: #0A0826;
+}
+.footer-container{
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
+
+.footer-container h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.footer-container p{
+    font-size: 1rem;
+    color:var(--light-color);
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.social{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icons i{
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #cccccc38;
+    border-radius: 50%;
+}
+
 
 
 /* small device  */
@@ -304,8 +351,20 @@
     .feature-info p{
         font-size: 1rem;
     }
-
-
+    .footer-container{
+        width: 90%;
+    }
+    .footer-container h2{
+        font-size: 1.5rem;
+    }
+    .footer-container p{
+        font-size: 1rem;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .social{
+        width: 50%;
+    }
      
 }
 
@@ -315,22 +374,18 @@
     .header-container{
         flex-direction: column;
     }
-
     .sponsor-container{
         width: 90%;
     }
-
     .banner-container{
         flex-direction: column-reverse;
     }
-
     .banner-img{
         width: 90%;
     }
     .banner-info{
         width: 90%;
     }
-
     .collections{
         grid-template-columns: repeat(2, 1fr);
         padding:0px 30px;
@@ -338,8 +393,6 @@
     .see-more{
         margin-right: 30px;
     }
-
-
     .feature-container{
         display: flex;
     }
@@ -357,6 +410,22 @@
         font-size: 1rem;
         line-height: 1.4rem;
     }
+    .footer-container{
+        width: 90%;
+    }
+    .footer-container h2{
+        font-size: 1.5rem;
+    }
+    .footer-container p{
+        font-size: 1rem;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .social{
+        width: 25%;
+    }
+
+
 }
 
 
