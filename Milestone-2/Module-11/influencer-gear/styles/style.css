@@ -99,6 +99,7 @@
     border: 1px solid var(--secondary-color);
     border-radius: 20px;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .cta-btn:hover{
@@ -129,14 +130,89 @@
     padding:15px  0px;
 }
 .sponsors{
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
- 
 /* sponsor styles end here */
 
+
+/* Collection styled start here */
+.collections{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+.collection-box{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.collection-box img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.collection-box h3{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.collection-box p{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--light-color);
+}
+.price{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+ 
+
+.review-starts{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;    
+}
+.starts i{
+    color: #FB8200;
+}
+.review{
+    color: var(--light-color);
+}
+
+.see-more{
+    text-align: end;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+
+}
+
+.right-arrow{
+    margin-left: 15px;
+}
+
+
+/* Collection styled end here */
 
 /* small device  */
 @media screen and (max-width:576px) {
@@ -157,6 +233,13 @@
     }
     .banner-info h2{
         font-size: 2rem;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 20px;
+    }
+    .see-more{
+        margin-right: 30px;
     }
 
      
@@ -183,6 +266,15 @@
     .banner-info{
         width: 90%;
     }
+
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+        padding:0px 30px;
+    }
+    .see-more{
+        margin-right: 30px;
+    }
+     
 }
 
 
