@@ -75,6 +75,7 @@
 /* Banner styles start here */
 .banner-container{
     display: flex;
+    align-items: center;
 }
 .banner-info{
     width: 40%;
@@ -88,6 +89,7 @@
     color: var(--primary-color);
     font-family: var(--primary-font);
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .cta-btn{
@@ -107,6 +109,7 @@
 
 .banner-img{
     width: 60%;
+    margin-bottom: 1.2rem;
 }
 .banner-img img{
     display: block;
@@ -130,11 +133,14 @@
         flex-direction: column-reverse;
     }
     .banner-img{
-        width: 100%;
+        width: 90%;
     }
     .banner-info{
         width: 100%;
         text-align: center;
+    }
+    .banner-info h2{
+        font-size: 2rem;
     }
 }
 
