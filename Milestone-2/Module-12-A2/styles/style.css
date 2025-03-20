@@ -4,7 +4,7 @@
 /* custom color variable */
 :root {
   --primary-color: #ffffff;
-  --light-gray-color: rgba(255, 255, 255, 50);
+  --light-gray-color: rgba(255, 255, 255, 0.3);
   --secondary-color: #e6533c;
   --primary-font: "Inter", sans-serif;
 }
@@ -24,6 +24,22 @@
 
 a {
   text-decoration: none;
+}
+
+.cta-btn{
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: .3s;
+}
+.cta-btn:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /* navber styles start here */
@@ -50,9 +66,9 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  padding: 6px 8px;
+  padding: 8px 10px;
   border-radius: 20px;
-  border: 1px solid rgb(87, 87, 87);
+  border: 1px solid rgba(87, 87, 87, 0.451);
 }
 
 .first-link {
@@ -64,9 +80,53 @@ a {
 
 .nav-link {
   font-size: 1rem;
-  color: var(--primary-color);
+  color:var(--light-gray-color);
   margin-left: 2rem;
   font-family: var(--primary-font);
+}
+
+/* Banner style here */
+.banner-container{
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.banner-left,
+.banner-right{
+    width: 50%;
+}
+
+.banner-left h2{
+    font-size: 5rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    margin-bottom: 1rem;
+}
+
+.shape{
+    font-style: italic;
+}
+
+.banner-left p{
+    font-size: 1.5rem;
+    color: var(--light-gray-color);
+    font-family: var(--primary-font);
+    margin-bottom: 1rem;
+}
+.download-btn{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray-color);
+    background-color: #111111;
+}
+
+.banner-right img{
+    display: block;
+    margin: 0 auto;
 }
 
 /* Small device */
