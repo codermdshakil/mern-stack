@@ -6,7 +6,7 @@
     --primary-color:#FFFFFF;
     --light-gray-color: rgba(255, 255, 255, 50);
     --secondary-color: #E6533C;
-    --primary-font:font-family: "Inter", sans-serif;
+    --primary-font:"Inter", sans-serif;
 }
 
 
@@ -18,13 +18,62 @@
 
 /* Shared styles */
 .container{
+   
     max-width: 1440px;
     display: block;
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
 
 
+
+
+
+
+
+/* navber styles start here */
+
+.header-section{
+    background-color: #111111;
+    padding: 3rem 0px;
+}
+.navber-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 20px;
+    border: 1px solid rgb(87, 87, 87);
+}
+
+.first-link{
+    margin-left: -1.5rem;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-left: 2rem;
+    font-family: var(--primary-font);
+}
 
 
 
