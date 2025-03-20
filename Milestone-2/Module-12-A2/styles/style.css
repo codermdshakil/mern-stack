@@ -260,6 +260,12 @@ a {
     padding: 20px;
   }
 
+  .banner-left h2,
+  .habits-titles h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+
   .menu-bar {
     display: block;
     font-size: 2rem;
@@ -306,6 +312,12 @@ a {
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .navber-container {
     padding: 0px 20px;
+  }
+  
+  .banner-left h2,
+  .habits-titles h2{
+    margin-top: 2rem;
+    font-size: 3rem;
   }
 
   .menu-bar {
