@@ -1,0 +1,30 @@
+/* Inter font linked here  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* custom color variable */
+:root{
+    --primary-color:#FFFFFF;
+    --light-gray-color: rgba(255, 255, 255, 50);
+    --secondary-color: #E6533C;
+    --primary-font:font-family: "Inter", sans-serif;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Shared styles */
+.container{
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
