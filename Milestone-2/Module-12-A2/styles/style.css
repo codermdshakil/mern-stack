@@ -100,9 +100,6 @@ a {
 }
 
 /* Banner style here */
-.banner-section{
-    height: 70vh;
-}
 .banner-container {
   margin: 2rem 0rem;
   display: flex;
@@ -243,6 +240,7 @@ a {
   width: 70%;
   display: block;
   margin: 0 auto;
+  border: 2px solid var(--light-gray-color);
   margin-bottom: 1rem;
   border-radius: 50%;
 }
@@ -257,6 +255,47 @@ a {
   color: var(--light-gray-color);
   font-family: var(--primary-font);
 }
+
+/* Run styles start here */
+.run-feature-section{
+    background-color: var(--dark-bg);
+    padding-bottom: 3rem;
+}
+
+.run-section{
+    padding: 3rem;
+    border-radius: 20px;
+    background-color: #222222;
+  
+}
+.run-container{
+    display: flex;
+    align-items: center;
+}
+
+.run-left,
+.run-right{
+    width: 50%;
+}
+.run-left h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+.run-left p{
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    color: var(--light-gray-color);
+    font-family: var(--primary-font);
+}
+
+.run-right img{
+    border-radius: 20px;
+    width: 100%;
+}
+
 
 /* Small device */
 @media screen and (max-width: 576px) {
@@ -301,8 +340,8 @@ a {
     padding: 0px 20px;
   }
 
-  .habits-titles p {
-    padding: 0rem 2rem;
+  .habits-titles p{
+    padding: 0rem;
   }
 
   .habits-container {
@@ -310,6 +349,27 @@ a {
   }
   .habit img {
     width: 60%;
+  }
+
+  .run-container{
+    flex-direction: column-reverse;
+  }
+  .run-section{
+    padding: 2rem;
+  }
+  
+  .run-left,
+  .run-right{
+    width: 100%;
+  }
+  .run-left h2{
+    font-size: 2.5rem;
+  }
+  .run-left p{
+    padding-right: 0rem;
+  }
+  .run-right img{
+    margin-bottom: 1rem;
   }
 }
 
@@ -352,13 +412,13 @@ a {
     left: 0px;
     bottom: 0px;
   }
-
-  .habits-titles p {
-    padding: 0rem 20px;
-  }
-
+ 
   .habits-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .habits-titles p{
+    padding: 0rem;
   }
   
 }
