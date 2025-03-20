@@ -6,6 +6,7 @@
   --primary-color: #ffffff;
   --light-gray-color: rgba(255, 255, 255, 0.3);
   --secondary-color: #e6533c;
+  --dark-bg: #000000;
   --primary-font: "Inter", sans-serif;
 }
 
@@ -48,12 +49,12 @@ a {
   background-color: #111111;
   padding: 3rem 0px;
 }
-.navber-section{
-    position: sticky;
-    top: 0;
-    padding: 20px 0px;
-    z-index: 5;
-    background-color: #111111;
+.navber-section {
+  position: sticky;
+  top: 0;
+  padding: 20px 0px;
+  z-index: 5;
+  background-color: #111111;
 }
 
 .navber-container {
@@ -170,7 +171,6 @@ a {
 }
 
 .glossy-box-2 {
-  
   position: absolute;
   left: 0px;
   bottom: -10px;
@@ -200,6 +200,58 @@ a {
 
 .glossy-right p {
   color: var(--light-gray-color);
+}
+
+/* habits styles start here */
+.habits-section {
+  padding: 2rem 0px;
+  background-color: var(--dark-bg);
+}
+
+.habits-titles h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+
+.habits-titles p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0rem 25rem;
+  color: var(--light-gray-color);
+  font-family: var(--primary-font);
+}
+
+.habits-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.habit{
+    padding: 1rem;
+    text-align:center;
+}
+.habit img{
+    width: 70%;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.habit h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+.habit p{
+    color: var(--light-gray-color);
+    font-family: var(--primary-font);
 }
 
 /* Small device */
@@ -236,16 +288,17 @@ a {
     bottom: 0px;
   }
 
-
+  .habits-titles p {
+    padding: 0rem 2rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  .navber-container {
+    padding: 0px 20px;
+  }
 
-    .navber-container{
-        padding: 0px 20px;
-    }
-
-    .menu-bar {
+  .menu-bar {
     display: block;
     font-size: 2rem;
     color: var(--primary-color);
@@ -262,9 +315,8 @@ a {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .banner-left{
+  .banner-left {
     text-align: center;
-
   }
   .glossy-box {
     right: 10px;
@@ -275,5 +327,8 @@ a {
     bottom: 0px;
   }
 
+  .habits-titles p{
+    padding: 0rem 20px;
+  }
 
 }
