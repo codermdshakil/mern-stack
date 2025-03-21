@@ -111,6 +111,10 @@ a {
   width: 50%;
 }
 
+.banner-right img{
+  width:60%;
+}
+
 .banner-left h2 {
   font-size: 5rem;
   color: var(--primary-color);
@@ -588,6 +592,10 @@ table, th, td {
     width: 100%;
     margin-bottom: 1rem;
   }
+  .banner-right img{
+    width: 80%;
+  }
+
   .glossy-box {
     right: 10px;
     top: 120px;
@@ -680,6 +688,8 @@ table, th, td {
     grid-template-columns: 1fr;
   }
 
+ 
+
 
 }
 
@@ -693,6 +703,10 @@ table, th, td {
   .tain-titles h2{
     margin-top: 2rem;
     font-size: 3rem;
+  }
+
+  .banner-right img{
+    width: 50%;
   }
 
   .menu-bar {
