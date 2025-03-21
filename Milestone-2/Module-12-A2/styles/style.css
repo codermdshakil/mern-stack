@@ -514,6 +514,48 @@ table, th, td {
   margin-top: 1rem;
   width: 10%;
 }
+
+/* meet team style start here */
+.team-section{
+  background-color: var(--dark-bg);
+  padding: 3rem 0rem;
+}
+.team-meat-container{
+  padding: 20px;
+  display: grid;
+  gap:20px;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 20px;
+  background-color: #222222;
+}
+
+.team-box{
+  position: relative;
+}
+.team-box img{
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.team-des{
+  bottom: 20px;
+  left: 20px;
+  font-family: var(--primary-font);
+  position: absolute;
+}
+
+.team-des h3{
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+.team-des p{
+  margin-bottom: 1rem;
+  font-weight: lighter;
+  color: var(--light-gray-color);
+}
+
+
+
 /* Small device */
 @media screen and (max-width: 576px) {
   .navber-container {
@@ -634,6 +676,9 @@ table, th, td {
   .ibm-calculator-btn{
     width: 20%;
   }
+  .team-meat-container{
+    grid-template-columns: 1fr;
+  }
 
 
 }
@@ -732,6 +777,9 @@ table, th, td {
   }
   .ibm-calculator-btn{
     width: 20%;
+  }
+  .team-meat-container{
+    grid-template-columns: repeat(2,1fr);
   }
 
 }
