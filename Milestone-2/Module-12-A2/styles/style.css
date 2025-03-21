@@ -420,6 +420,31 @@ a {
   width: 100%;
   height: 100%;
 }
+/* ibm title style here */
+
+.ibm-title-section{
+  background-color: var(--dark-bg);
+  padding: 3rem 0rem;
+}
+
+.ibm-titles{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.ibm-titles h2{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+
+.ibm-titles p{
+  margin-bottom: 1rem;
+  color: var(--light-gray-color);
+  font-family: var(--primary-font);
+}
 
 /* Small device */
 @media screen and (max-width: 576px) {
@@ -429,7 +454,8 @@ a {
 
   .banner-left h2,
   .habits-titles h2,
-  .tain-titles h2 {
+  .tain-titles h2 ,
+  .ibm-titles h2{
     margin-top: 2rem;
     font-size: 3rem;
   }
@@ -513,6 +539,12 @@ a {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 10px;
   }
+
+  .ibm-titles{
+    width: 90%;
+  }
+
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -580,4 +612,13 @@ a {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .ibm-titles{
+    width: 90%;
+    padding: 0px 20px;
+  }
+  .ibm-titles h2{
+    font-size: 2rem;
+  }
+
 }
